@@ -1,0 +1,4 @@
+<?php
+$homePhotos = $conn->query('SELECT image_path,title FROM gallery WHERE is_active=1 ORDER BY sort_order,id DESC LIMIT 4')->fetchAll();
+?>
+<?php if ($homePhotos): ?><section class="py-5"><div class="container"><div class="text-center mb-4"><span class="section-tag">From our café</span><h2 class="section-title">A Few Moments at Brew Haven</h2></div><div class="row g-3"><?php foreach ($homePhotos as $photo): ?><div class="col-6 col-lg-3"><a href="gallery.php" class="d-block rounded-4 overflow-hidden"><img src="<?= e($photo['image_path']) ?>" alt="<?= e($photo['title']) ?>" loading="lazy" class="w-100" style="height:220px;object-fit:cover"></a></div><?php endforeach; ?></div><div class="text-center mt-4"><a href="gallery.php" class="btn btn-outline-dark">Visit the gallery</a></div></div></section><?php endif; ?>

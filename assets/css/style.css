@@ -1,0 +1,1057 @@
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFF8F0;
+}
+
+.navbar{
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.btn-dark{
+    background:#6F4E37;
+    border:none;
+}
+
+.btn-dark:hover{
+    background:#4e342e;
+}
+
+footer{
+    margin-top:100px;
+}
+
+/* HERO SECTION */
+
+.hero-section{
+     min-height:100vh;
+    padding-top:120px;
+    background:linear-gradient(
+        rgba(34,34,34,.75),
+        rgba(34,34,34,.75)
+    ),
+    url("../images/hero/coffee-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+.hero-tag{
+
+    background:#D2691E;
+
+    padding:8px 20px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    display:inline-block;
+
+}
+
+.hero-title{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+.hero-text{
+
+    font-size:18px;
+
+    color:#dddddd;
+
+}
+
+.btn-coffee{
+
+    background:#6F4E37;
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+}
+
+.btn-coffee:hover{
+
+    background:#4e342e;
+
+    color:white;
+
+}
+
+.hero-image{
+
+    max-width:500px;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.custom-navbar{
+
+     background:rgba(18,18,18,.85);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.4s ease;
+
+}
+
+.logo{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:2px solid rgba(255,255,255,.8);
+
+    box-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+.brand-name{
+
+    color:#fff;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.navbar-nav{
+
+    gap:35px;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#D2691E !important;
+
+}
+
+.nav-icons{
+
+    gap:20px;
+
+}
+
+.icon-btn{
+
+    color:white;
+
+    font-size:20px;
+
+    transition:.3s;
+
+    text-decoration:none;
+
+}
+
+.icon-btn:hover{
+
+    color:#D2691E;
+
+}
+
+.cart-count{
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-10px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#D2691E;
+
+    color:white;
+
+    font-size:10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-btn{
+
+    background:#D2691E;
+
+    color:white;
+
+    border-radius:40px;
+
+    padding:10px 24px;
+
+}
+
+.login-btn:hover{
+
+    background:#8B5E3C;
+
+    color:white;
+
+}
+
+/* ===========================
+   FEATURED COFFEE
+=========================== */
+
+.featured-section{
+    padding:100px 0;
+    background:#fff;
+}
+
+.section-tag{
+    display:inline-block;
+    background:#D2691E;
+    color:#fff;
+    padding:8px 22px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.section-title{
+    font-size:48px;
+    font-weight:700;
+    margin-top:20px;
+    color:#222;
+}
+
+.section-subtitle{
+    color:#777;
+    margin-top:15px;
+    font-size:18px;
+}
+
+.coffee-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s ease;
+}
+
+.coffee-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+.coffee-img{
+    background:#f8f8f8;
+    padding:30px;
+    text-align:center;
+}
+
+.coffee-img img{
+    width:100%;
+    max-width:220px;
+    height:220px;
+    object-fit:contain;
+}
+
+.coffee-body{
+    padding:25px;
+}
+
+.coffee-body h3{
+    font-size:24px;
+    font-weight:700;
+    color:#333;
+}
+
+.coffee-body p{
+    color:#666;
+    margin:15px 0;
+}
+
+.coffee-rating{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.coffee-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.coffee-footer h4{
+    color:#6F4E37;
+    font-size:24px;
+    font-weight:700;
+}
+
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about-section{
+
+    background:#FFF8F0;
+
+    padding:100px 0;
+
+}
+
+.about-section img{
+
+    border-radius:20px;
+
+}
+
+.about-section h3{
+
+    color:#6F4E37;
+
+    font-weight:700;
+
+}
+
+.about-section p{
+
+    font-size:17px;
+
+}
+
+/* ===========================================
+   CATEGORIES SECTION
+=========================================== */
+
+.categories-section{
+    background:#ffffff;
+    padding:100px 0;
+}
+
+.category-card{
+    background:#FFF8F0;
+    padding:40px 20px;
+    border-radius:20px;
+    transition:0.3s ease;
+    cursor:pointer;
+    height:100%;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+    background:#6F4E37;
+    color:#fff;
+}
+
+.category-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#F3E5D8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:0.3s ease;
+}
+
+.category-icon i{
+    font-size:40px;
+    color:#6F4E37;
+    transition:0.3s ease;
+}
+
+.category-card:hover .category-icon{
+    background:#ffffff;
+}
+
+.category-card:hover .category-icon i{
+    color:#6F4E37;
+}
+
+.category-card h4{
+    font-weight:700;
+    margin-bottom:0;
+}
+
+/* ==========================================
+   REGISTER PAGE
+========================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
+.card h2{
+
+    color:#6F4E37;
+
+    font-weight:700;
+
+}
+
+.form-control{
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.form-control:focus{
+
+    border-color:#6F4E37;
+
+    box-shadow:0 0 10px rgba(111,78,55,.2);
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+/* ==========================================
+   PRODUCT DETAILS
+========================================== */
+
+.product-image{
+
+    border-radius:20px;
+
+}
+
+.product-price{
+
+    color:#6F4E37;
+
+    font-size:36px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   FEATURED PRODUCTS
+========================================== */
+
+.coffee-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    height:100%;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.coffee-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.coffee-img{
+
+    overflow:hidden;
+
+}
+
+.coffee-img img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.coffee-card:hover .coffee-img img{
+
+    transform:scale(1.08);
+
+}
+
+.coffee-body{
+
+    padding:25px;
+
+}
+
+.product-link{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.product-link:hover{
+
+    color:#D2691E;
+
+}
+
+.coffee-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+}
+
+.coffee-footer h4{
+
+    margin:0;
+
+    color:#6F4E37;
+
+    font-weight:700;
+
+}
+
+.add-cart-btn{
+
+    border-radius:40px;
+
+}
+
+/* ==========================================
+   SHOPPING CART
+========================================== */
+
+.card{
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.remove-btn{
+
+    border-radius:30px;
+
+}
+
+.increase-btn,
+.decrease-btn{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    font-size:20px;
+
+}
+
+.order-summary{
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+/*==============================
+Toast Notification
+==============================*/
+
+.custom-toast{
+
+position:fixed;
+
+top:30px;
+
+right:30px;
+
+background:#6F4E37;
+
+color:white;
+
+padding:15px 25px;
+
+border-radius:12px;
+
+box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+opacity:0;
+
+transform:translateY(-30px);
+
+transition:.4s;
+
+z-index:99999;
+
+}
+
+.custom-toast.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ==========================
+CHECKOUT
+========================== */
+
+.form-control,
+.form-select{
+
+border-radius:12px;
+padding:12px;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+box-shadow:0 0 0 .2rem rgba(111,78,55,.2);
+border-color:#6F4E37;
+
+}
+
+.checkout-card{
+
+background:#fff;
+border:none;
+border-radius:20px;
+
+}
+
+.order-summary{
+
+position:sticky;
+top:120px;
+
+}
+
+.order-summary h3{
+
+font-weight:700;
+
+}
+
+/*=============================
+Dashboard
+=============================*/
+
+.dashboard-card{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+text-align:center;
+
+transition:.35s;
+
+margin-bottom:30px;
+
+}
+
+.dashboard-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.dashboard-card h2{
+
+font-size:45px;
+
+font-weight:700;
+
+color:#6F4E37;
+
+}
+
+.dashboard-card p{
+
+font-size:18px;
+
+margin-top:10px;
+
+}
+
+/*==========================
+WHY US
+==========================*/
+
+.why-section{
+
+padding:100px 0;
+
+background:#fff;
+
+}
+
+.why-card{
+
+background:white;
+
+padding:45px;
+
+text-align:center;
+
+border-radius:25px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.why-card i{
+
+font-size:60px;
+
+color:#D2691E;
+
+margin-bottom:25px;
+
+}
+
+.why-card h4{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.why-card p{
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+/* ==========================
+STORY SECTION
+========================== */
+
+
+.story-section{
+
+background:#fff;
+
+padding:100px 0;
+
+}
+
+
+.story-image img{
+
+height:500px;
+
+width:100%;
+
+object-fit:cover;
+
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+
+.story-text{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#666;
+
+}
+
+
+
+.story-feature{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+
+.story-feature i{
+
+font-size:35px;
+
+color:#D2691E;
+
+margin-bottom:15px;
+
+}
+
+
+.story-feature h5{
+
+font-weight:700;
+
+}
+
+
+.story-feature p{
+
+color:#777;
+
+}
+
+/* ===============================
+   Discover Section
+================================== */
+
+.discover-section{
+    background:#f8f6f2;
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:#6f4e37;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.discover-section h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#3b2b22;
+}
+
+.section-description{
+
+    max-width:700px;
+
+    margin:15px auto;
+
+    color:#666;
+
+    line-height:1.8;
+}
+
+.discover-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.discover-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.discover-icon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+}
+
+.discover-card h4{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.discover-card p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+    line-height:1.7;
+}
+
+.discover-card .btn{
+
+    border-radius:30px;
+
+    padding:10px 28px;
+}
+
+/* Mood Cards */
+
+.mood-card{
+    background:#fff;
+    border:2px solid #eee;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s ease;
+    height:100%;
+}
+
+.mood-card:hover{
+    transform:translateY(-5px);
+    border-color:#6f4e37;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.mood-card .emoji{
+    font-size:40px;
+    display:block;
+    margin-bottom:10px;
+}
+
+.mood-card h6{
+    margin:0;
+    font-weight:600;
+}
+
+.mood-card.active{
+    background:#6f4e37;
+    color:#fff;
+    border-color:#6f4e37;
+}
+
+/* Recommendation Progress */
+
+.recommendation-progress{
+
+    max-width:700px;
+
+    margin:30px auto;
+}
+
+.progress-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+}

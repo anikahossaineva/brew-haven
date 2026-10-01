@@ -1,0 +1,4 @@
+<?php
+$activeOffers = $conn->query('SELECT title, description, discount_percent FROM offers WHERE is_active = 1 AND (starts_at IS NULL OR starts_at <= NOW()) AND (ends_at IS NULL OR ends_at >= NOW()) ORDER BY id DESC LIMIT 2')->fetchAll();
+?>
+<?php if ($activeOffers): ?><section class="py-5" style="background:#f1e6d8"><div class="container"><div class="text-center mb-4"><span class="section-tag">A little something extra</span><h2 class="section-title">Current Offers</h2></div><div class="row justify-content-center g-4"><?php foreach ($activeOffers as $offer): ?><div class="col-md-5"><article class="card h-100 border-0 shadow-sm rounded-4"><div class="card-body p-4"><span class="badge text-bg-dark mb-3"><?= number_format((float) $offer['discount_percent'], 0) ?>% offer</span><h3 class="h4"><?= e($offer['title']) ?></h3><p class="mb-0"><?= e($offer['description']) ?></p></div></article></div><?php endforeach; ?></div></div></section><?php endif; ?>
